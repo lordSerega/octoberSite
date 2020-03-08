@@ -1,0 +1,51 @@
+
+
+.social_media_links a {
+    text-decoration: none;
+    font-size: 18px;
+    color: #4984df;
+    margin-right: 5px;
+    
+    
+}
+
+.social_media_links{
+    padding: 15px 0;
+    
+}
+
+
+
+.short_contact_list a{
+
+    text-decoration: none;
+}
+   ul {
+    margin: 0; /* Обнуляем значение отступов */
+    padding: 4px; /* Значение полей */
+   }
+   ul  li {
+    display: inline; /* Отображать как строчный элемент */
+    margin-right: 5px; /* Отступ слева */
+
+   }
+
+
+.short_contact_list a {
+    color: #7c7c7c;
+    
+}
+.short_contact_list i {
+    color: #000000;
+}
+
+.main-header-area {
+    padding-top: 10px;
+}
+.logo {
+    height: 50px;
+     text-align: center;
+            
+        }
+
+
