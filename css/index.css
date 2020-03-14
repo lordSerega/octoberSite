@@ -8,6 +8,10 @@
     
     
 }
+.weight-3{
+    width: 50px;
+    color: black;
+}
 
 .social_media_links{
     padding: 15px 0;
@@ -47,5 +51,65 @@
      text-align: center;
             
         }
+.bg-active{
+    background: #292929;
+    color: white;
+
+}
+.n-hover:hover {
+    background: #f7f7f7;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
