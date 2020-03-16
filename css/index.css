@@ -24,15 +24,7 @@
 
     text-decoration: none;
 }
-   ul {
-    margin: 0; /* Обнуляем значение отступов */
-    padding: 4px; /* Значение полей */
-   }
-   ul  li {
-    display: inline; /* Отображать как строчный элемент */
-    margin-right: 5px; /* Отступ слева */
 
-   }
 
 
 .short_contact_list a {

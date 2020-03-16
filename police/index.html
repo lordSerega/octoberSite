@@ -1,0 +1,282 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="https://kit.fontawesome.com/147ad66cb5.js" crossorigin="anonymous"></script>
+    <title>Стоматологическая клиника ОКТЯБРЬ в Ростове-на-Дону</title>
+    <link href="../css/index.css" rel="stylesheet">
+</head>
+
+<body>
+          <!-- Modal -->
+    <div id="myModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+        <div class="modal-content">
+
+       
+        <div class="modal-body">
+         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <!-- Создаём форму и указываем её обработчик и метод -->
+            <form action="../php/post.php" method="post" name="form">
+
+              <!-- Поле ввода имени -->
+              <div class="form-group">
+                <label for="exampleFormControlInput1">Как к вам обращаться?</label>
+                 <input name="name" type="text" class="form-control" id="exampleFormControlInput1" placeholder="Иванов Иван Иванович" required>
+               </div>
+                <div class="form-group">
+                <label for="exampleFormControlInput1">Ваш email</label>
+                 <input name="email" type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.ru" required>
+               </div>
+               
+                <div class="form-group">
+                <label for="exampleFormControlInput1">Ваш номер телефона</label>
+                 <input name="tel" type="tel" class="form-control" id="exampleFormControlInput1" placeholder="+79996932404" required>
+               </div>
+               
+                <div class="form-group">
+                <label for="exampleFormControlInput1">К кому и когда хотите записаться?</label>
+                    <textarea name="message" type="tel" class="form-control" id="exampleFormControlInput1" required> </textarea>
+               </div>
+                  <div class="form-group">
+                     <button type="submit" class="btn btn-dark btn-block">Отправить</button>
+               </div>
+               
+               
+               
+               <div class="form-check form-check-inline">
+                    
+                  <label class="form-check-label text-center" for="inlineCheckbox1">Нажимая на кнопку, вы даете согласие на обработку своих персональных данных и соглашатесь с <a href="police/index.html">политикой конфедециальности</a>.</label>
+                </div>
+
+            </form> 
+    
+
+        </div><!-- End of Modal body -->
+        </div><!-- End of Modal content -->
+        </div><!-- End of Modal dialog -->
+    </div><!-- End of Modal -->
+    <div class="sticky-top bg-white">
+        <div class="container mt-4">
+            <div class="row">
+                <div class="col-xl-12 col-md-12 pl-0 pr-0 ">
+                    <nav class="navbar navbar-expand-lg navbar-light ">
+                        <a class="navbar-brand" href="#"><img src="../img/logo.png" class="logo" alt=""></a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav mr-auto">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="../index.html">Главная</a>
+                                </li>
+                                <li class="nav-item dropdown active">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> О клинике<span class="sr-only">(current)</span>
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <a class="dropdown-item" href="about.html">Подробнее<span class="sr-only">(current)</span></a>
+                                        <a class="dropdown-item" href="#">Услуги</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item" href="#">Документы</a>
+                                        <a class="dropdown-item" href="#">График приема</a>
+                                    </div>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link " href="#">Расписание</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link " href="#">Прайс</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link " href="#">Контакты</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link " href="#">Отзывы</a>
+                                </li>
+                            </ul>
+                            <form class="form-inline my-2 my-lg-0">
+                    <button type="button" class="btn btn-outline-dark my-2 my-sm-0" data-toggle="modal" data-target="#myModal">Записаться на прием</button>
+                            </form>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+  <div class="container">
+      <div class="row">
+          <div class="col-xl-12">
+              <h1>Политика в отношении обработки персональных данных</h1>
+              <h2>1.Общие положения</h2>
+              <p>Настоящая политика обработки персональных данных составлена в соответствии с требованиями Федерального закона от 27.07.2006. №152-ФЗ «О персональных данных» и определяет порядок обработки персональных данных и меры по обеспечению безопасности персональных данных ООО «Октябрь» (далее – Оператор).</p>
+            <ol>
+        <li>Оператор ставит своей важнейшей целью и условием осуществления своей деятельности соблюдение прав и свобод человека и гражданина при обработке его персональных данных, в том числе защиты прав на неприкосновенность частной жизни, личную и семейную тайну.</li>
+        <li>Настоящая политика Оператора в отношении обработки персональных данных (далее – Политика) применяется ко всей информации, которую Оператор может получить о посетителях веб-сайта http://ооо-октябрь.рф.</li>
+      </ol>
+         <h2>2. Основные понятия, используемые в Политике</h2>
+         <ol>
+        <li>Автоматизированная обработка персональных данных – обработка персональных данных с помощью средств вычислительной техники;</li>
+        <li>Блокирование персональных данных – временное прекращение обработки персональных данных (за исключением случаев, если обработка необходима для уточнения персональных данных);</li>
+        <li>Веб-сайт – совокупность графических и информационных материалов, а также программ для ЭВМ и баз данных, обеспечивающих их доступность в сети интернет по сетевому адресу http://ооо-октябрь.рф;</li>
+        <li>Информационная система персональных данных — совокупность содержащихся в базах данных персональных данных, и обеспечивающих их обработку информационных технологий и технических средств;</li>
+        <li>Обезличивание персональных данных — действия, в результате которых невозможно определить без использования дополнительной информации принадлежность персональных данных конкретному Пользователю или иному субъекту персональных данных;</li>
+        <li>Обработка персональных данных – любое действие (операция) или совокупность действий (операций), совершаемых с использованием средств автоматизации или без использования таких средств с персональными данными, включая сбор, запись, систематизацию, накопление, хранение, уточнение (обновление, изменение), извлечение, использование, передачу (распространение, предоставление, доступ), обезличивание, блокирование, удаление, уничтожение персональных данных;</li>
+        <li>Оператор – государственный орган, муниципальный орган, юридическое или физическое лицо, самостоятельно или совместно с другими лицами организующие и (или) осуществляющие обработку персональных данных, а также определяющие цели обработки персональных данных, состав персональных данных, подлежащих обработке, действия (операции), совершаемые с персональными данными;</li>
+        <li>Персональные данные – любая информация, относящаяся прямо или косвенно к определенному или определяемому Пользователю веб-сайта http://ооо-октябрь.рф;</li>
+        <li>Пользователь – любой посетитель веб-сайта http://ооо-октябрь.рф;</li>
+        <li>Предоставление персональных данных – действия, направленные на раскрытие персональных данных определенному лицу или определенному кругу лиц;</li>
+        <li>Распространение персональных данных – любые действия, направленные на раскрытие персональных данных неопределенному кругу лиц (передача персональных данных) или на ознакомление с персональными данными неограниченного круга лиц, в том числе обнародование персональных данных в средствах массовой информации, размещение в информационно-телекоммуникационных сетях или предоставление доступа к персональным данным каким-либо иным способом;</li>
+        <li>Трансграничная передача персональных данных – передача персональных данных на территорию иностранного государства органу власти иностранного государства, иностранному физическому или иностранному юридическому лицу;</li>
+        <li>Уничтожение персональных данных – любые действия, в результате которых персональные данные уничтожаются безвозвратно с невозможностью дальнейшего восстановления содержания персональных данных в информационной системе персональных данных и (или) результате которых уничтожаются материальные носители персональных данных.</li>
+      </ol>
+        <h2>3. Оператор может обрабатывать следующие персональные данные Пользователя</h2>
+        <ol>
+            <li>Фамилия, имя, отчество;</li>
+            <li>Электронный адрес;</li>
+            <li>Номера телефонов;</li>
+            <li>Также на сайте происходит сбор и обработка обезличенных данных о посетителях (в т.ч. файлов «cookie») с помощью сервисов интернет-статистики (Яндекс Метрика и Гугл Аналитика и других).</li>
+            <li>Вышеперечисленные данные далее по тексту Политики объединены общим понятием Персональные данные.</li>
+        </ol>
+        <h2>4. Цели обработки персональных данных</h2>
+        <ol>
+            <li>Цель обработки персональных данных Пользователя — информирование Пользователя посредством отправки электронных писем; предоставление доступа Пользователю к сервисам, информации и/или материалам, содержащимся на веб-сайте.</li>
+            <li>Также Оператор имеет право направлять Пользователю уведомления о новых продуктах и услугах, специальных предложениях и различных событиях. Пользователь всегда может отказаться от получения информационных сообщений, направив Оператору письмо на адрес электронной почты okt-stom@list.ru с пометкой «Отказ от уведомлениях о новых продуктах и услугах и специальных предложениях».</li>
+            <li>Обезличенные данные Пользователей, собираемые с помощью сервисов интернет-статистики, служат для сбора информации о действиях Пользователей на сайте, улучшения качества сайта и его содержания.</li>
+        </ol>
+         <h2>5. Правовые основания обработки персональных данных</h2>
+         <ol>
+             <li>Оператор обрабатывает персональные данные Пользователя только в случае их заполнения и/или отправки Пользователем самостоятельно через специальные формы, расположенные на сайте http://ооо-октябрь.рф. Заполняя соответствующие формы и/или отправляя свои персональные данные Оператору, Пользователь выражает свое согласие с данной Политикой</li>
+             <li>Оператор обрабатывает обезличенные данные о Пользователе в случае, если это разрешено в настройках браузера Пользователя (включено сохранение файлов «cookie» и использование технологии JavaScript).</li>
+         </ol>
+         <h2>6. Порядок сбора, хранения, передачи и других видов обработки персональных данных</h2>
+          <p>Безопасность персональных данных, которые обрабатываются Оператором, обеспечивается путем реализации правовых, организационных и технических мер, необходимых для выполнения в полном объеме требований действующего законодательства в области защиты персональных данных.</p>
+         <ol>
+           
+             <li>Оператор обеспечивает сохранность персональных данных и принимает все возможные меры, исключающие доступ к персональным данным неуполномоченных лиц.</li>
+             <li>Персональные данные Пользователя никогда, ни при каких условиях не будут переданы третьим лицам, за исключением случаев, связанных с исполнением действующего законодательства.</li>
+             <li>В случае выявления неточностей в персональных данных, Пользователь может актуализировать их самостоятельно, путем направления Оператору уведомление на адрес электронной почты Оператора okt-stom@list.ru с пометкой «Актуализация персональных данных».</li>
+             <li>Срок обработки персональных данных является неограниченным. Пользователь может в любой момент отозвать свое согласие на обработку персональных данных, направив Оператору уведомление посредством электронной почты на электронный адрес Оператора okt-stom@list.ru с пометкой «Отзыв согласия на обработку персональных данных».</li>
+         </ol>
+         <h2> 
+7. Трансграничная передача персональных данных
+</h2>
+         <ol>
+             <li>Оператор до начала осуществления трансграничной передачи персональных данных обязан убедиться в том, что иностранным государством, на территорию которого предполагается осуществлять передачу персональных данных, обеспечивается надежная защита прав субъектов персональных данных.</li>
+             <li>Трансграничная передача персональных данных на территории иностранных государств, не отвечающих вышеуказанным требованиям, может осуществляться только в случае наличия согласия в письменной форме субъекта персональных данных на трансграничную передачу его персональных данных и/или исполнения договора, стороной которого является субъект персональных данных.</li>
+         </ol>
+         <h2>8. Заключительные положения</h2>
+         <ol>
+             <li>Пользователь может получить любые разъяснения по интересующим вопросам, касающимся обработки его персональных данных, обратившись к Оператору с помощью электронной почты okt-stom@list.ru.</li>
+             <li>В данном документе будут отражены любые изменения политики обработки персональных данных Оператором. Политика действует бессрочно до замены ее новой версией.</li>
+             <li>Актуальная версия Политики в свободном доступе расположена в сети Интернет по адресу http://ооо-октябрь.рф/police.</li>
+         </ol>
+          </div>
+      </div>
+  </div>
+   
+    <section class="pt-3">
+        <div class="kek bg-light">
+            <div class="container text-dark">
+                <div class="row">
+                    <div class="col-xl-3 text-left">
+                        <h3>&#160;</h3>
+                        <h6>Клиника в Ростове-на-Дону</h6>
+                        <p><i class="fa fa-location-arrow" aria-hidden="true"></i> бульвар Комарова 12/1</p>
+                        <p><i class="fa fa-phone"></i> +7 (863) 256 08-20</p>
+                    </div>
+                    <div class="col-xl-6 text-left">
+                        <h3>&#160;</h3>
+                        <h6>Клиника в Новочеркасске</h6>
+                        <p><i class="fa fa-location-arrow" aria-hidden="true"></i> ул. Просвещения, 77б </p>
+                        <p><i class="fa fa-phone"></i> +7 (8635) 244-255</p>
+                    </div>
+                    <div class="col-xl-3 pull-right">
+                        <h3>&#160;</h3>
+                        <div id="sliderInner" class="carousel slide " data-ride="carousel" data-interval="2000">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="../img/footer/logo1.png" class="d-block w-100" alt="Природа">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../img/footer/logo2.png" class="d-block w-100" alt="Природа">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../img/footer/logo3.png" class="d-block w-100" alt="Природа">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../img/footer/logo4.png" class="d-block w-100" alt="Природа">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../img/footer/logo5.png" class="d-block w-100" alt="Природа">
+                                </div>
+                            </div>
+                        </div>
+                        <br>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-12 text-center">
+                        <br>
+                        <p class="lead">Горячая линия для приема жалоб, предложений и замечаний <br> <i class="fa fa-phone"></i> +7-991-365-44-55</p>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-6">
+                        <p class="small">
+                            © 2020 Все права защищены. <br>
+                            "ОКТЯБРЬ" — Стоматология в Ростове-на-Дону <br>
+                            Разработка и продвижение сайта Студия "kaplin-web"
+                        </p>
+                    </div>
+                    <div class="col-xl-6 text-right">
+                        <p>
+                            <small><a href="index.html" class="text-dark">Политика конфедециальности</a></small> <br>
+                            <small><a href="" class="text-dark">Версия для слабовидящих</a></small> <br>
+                            <small><a href="" class="text-dark">Версия для печати</a></small>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+        <script type='text/javascript'>
+(function () {
+    window['yandexChatWidgetCallback'] = function() {
+        try {
+            window.yandexChatWidget = new Ya.ChatWidget({
+                guid: 'c994aa03-b35b-4265-87f7-455921a03dd3',
+                buttonText: '',
+                title: 'Октябрь',
+                theme: 'dark',
+                collapsedDesktop: 'never',
+                collapsedTouch: 'always'
+            });
+        } catch(e) { }
+    };
+    var n = document.getElementsByTagName('script')[0],
+        s = document.createElement('script');
+    s.async = true;
+    s.charset = 'UTF-8';
+    s.src = 'https://chat.s3.yandex.net/widget.js';
+    n.parentNode.insertBefore(s, n);
+})();
+</script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+
+</html>

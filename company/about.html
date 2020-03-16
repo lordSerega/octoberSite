@@ -9,11 +9,59 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="css/index.css">
     <script src="https://kit.fontawesome.com/147ad66cb5.js" crossorigin="anonymous"></script>
-    <title>Hello, world!</title>
+    <title>Стоматологическая клиника ОКТЯБРЬ в Ростове-на-Дону</title>
     <link href="../css/index.css" rel="stylesheet">
 </head>
 
 <body>
+       <!-- Modal -->
+    <div id="myModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+        <div class="modal-content">
+
+       
+        <div class="modal-body">
+         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <!-- Создаём форму и указываем её обработчик и метод -->
+            <form action="../php/post.php" method="post" name="form">
+
+              <!-- Поле ввода имени -->
+              <div class="form-group">
+                <label for="exampleFormControlInput1">Как к вам обращаться?</label>
+                 <input name="name" type="text" class="form-control" id="exampleFormControlInput1" placeholder="Иванов Иван Иванович" required>
+               </div>
+                <div class="form-group">
+                <label for="exampleFormControlInput1">Ваш email</label>
+                 <input name="email" type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.ru" required>
+               </div>
+               
+                <div class="form-group">
+                <label for="exampleFormControlInput1">Ваш номер телефона</label>
+                 <input name="tel" type="tel" class="form-control" id="exampleFormControlInput1" placeholder="+79996932404" required>
+               </div>
+               
+                <div class="form-group">
+                <label for="exampleFormControlInput1">К кому и когда хотите записаться?</label>
+                    <textarea name="message" type="tel" class="form-control" id="exampleFormControlInput1" required> </textarea>
+               </div>
+                  <div class="form-group">
+                     <button type="submit" class="btn btn-dark btn-block">Отправить</button>
+               </div>
+               
+               
+               
+               <div class="form-check form-check-inline">
+                    
+                  <label class="form-check-label text-center" for="inlineCheckbox1">Нажимая на кнопку, вы даете согласие на обработку своих персональных данных и соглашатесь с <a href="police/index.html">политикой конфедециальности</a>.</label>
+                </div>
+
+            </form> 
+    
+
+        </div><!-- End of Modal body -->
+        </div><!-- End of Modal content -->
+        </div><!-- End of Modal dialog -->
+    </div><!-- End of Modal -->
     <div class="sticky-top bg-white">
         <div class="container mt-4">
             <div class="row">
@@ -33,27 +81,28 @@
                                     </a>
                                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                                         <a class="dropdown-item" href="about.html">Подробнее<span class="sr-only">(current)</span></a>
-                                        <a class="dropdown-item" href="#">Услуги</a>
+                                        <a class="dropdown-item" href="licences.html">Лицензии и рекомендации</a>
+                                        <a class="dropdown-item" href="advantages.html">Преимущества клиники</a>
+                                        <a class="dropdown-item" href="services.html">Услуги</a>
                                         <div class="dropdown-divider"></div>
-                                        <a class="dropdown-item" href="#">Документы</a>
-                                        <a class="dropdown-item" href="#">График приема</a>
+                                        <a class="dropdown-item" href="reseption.html">График приема</a>
                                     </div>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link " href="#">Расписание</a>
+                                    <a class="nav-link " href="../timetable.html">Расписание</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link " href="#">Прайс</a>
+                                    <a class="nav-link " href="../price.html">Прайс</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link " href="#">Контакты</a>
+                                    <a class="nav-link " href="../contacts.html">Контакты</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link " href="#">Отзывы</a>
+                                    <a class="nav-link " href="../reviews.html">Отзывы</a>
                                 </li>
                             </ul>
                             <form class="form-inline my-2 my-lg-0">
-                                <button class="btn btn-outline-dark my-2 my-sm-0" type="submit">Записать на прием</button>
+                    <button type="button" class="btn btn-outline-dark my-2 my-sm-0" data-toggle="modal" data-target="#myModal">Записаться на прием</button>
                             </form>
                         </div>
                     </nav>
@@ -77,9 +126,11 @@
         <div class="row">
             <div class="col-xl-3  ">
                 <nav class="nav flex-column pl-0 border border-dark rounded">
-                    <a class="nav-link bg-active rounded text-white " href="#">О клинике</a>
+                    <a class="nav-link bg-active rounded text-white " href="about.html">О клинике</a>
                     <a class="nav-link text-dark n-hover" href="licences.html">Лицензии и рекомендации</a>
-                    <a class="nav-link text-dark n-hover" href="#">Преимущества клиники</a>
+                    <a class="nav-link text-dark n-hover" href="advantages.html">Преимущества клиники</a>
+                    <a class="nav-link text-dark n-hover" href="services.html">Услуги</a>
+                    <a class="nav-link text-dark n-hover" href="reseption.html">График приема</a>
                 </nav>
             </div>
             <div class="col-xl-9">
@@ -180,7 +231,7 @@
         </div>
     </div>
     <section class="pt-3">
-        <div class="kek bg-light">
+        <div class="kek bg-light  ">
             <div class="container text-dark">
                 <div class="row">
                     <div class="col-xl-3 text-left">
@@ -240,7 +291,7 @@
                     </div>
                     <div class="col-xl-6 text-right">
                         <p>
-                            <small><a href="" class="text-dark">Политика конфедециальности</a></small> <br>
+                            <small><a href="../police/index.html" class="text-dark">Политика конфедециальности</a></small> <br>
                             <small><a href="" class="text-dark">Версия для слабовидящих</a></small> <br>
                             <small><a href="" class="text-dark">Версия для печати</a></small>
                         </p>
@@ -249,6 +300,28 @@
             </div>
         </div>
     </section>
+<script type='text/javascript'>
+(function () {
+    window['yandexChatWidgetCallback'] = function() {
+        try {
+            window.yandexChatWidget = new Ya.ChatWidget({
+                guid: 'c994aa03-b35b-4265-87f7-455921a03dd3',
+                buttonText: '',
+                title: 'Октябрь',
+                theme: 'dark',
+                collapsedDesktop: 'never',
+                collapsedTouch: 'always'
+            });
+        } catch(e) { }
+    };
+    var n = document.getElementsByTagName('script')[0],
+        s = document.createElement('script');
+    s.async = true;
+    s.charset = 'UTF-8';
+    s.src = 'https://chat.s3.yandex.net/widget.js';
+    n.parentNode.insertBefore(s, n);
+})();
+</script>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
