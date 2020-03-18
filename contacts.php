@@ -41,21 +41,21 @@
                                         <a class="dropdown-item" href="company/reseption.html">График приема</a>
                                     </div>
                                 </li>
-                                <li class="nav-item active">
-                                    <a class="nav-link " href="timetable.html">Расписание<span class="sr-only">(current)</span></a>
+                                <li class="nav-item">
+                                    <a class="nav-link " href="timetable.html">Расписание</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link " href="price.html">Прайс</a>
                                 </li>
-                                <li class="nav-item">
-                                    <a class="nav-link " href="contacts.html">Контакты</a>
+                                <li class="nav-item active">
+                                    <a class="nav-link " href="contacts.html">Контакты<span class="sr-only">(current)</span></a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link " href="reviews.html">Отзывы</a>
                                 </li>
                             </ul>
                             <form class="form-inline my-2 my-lg-0">
-                                <button class="btn btn-outline-dark my-2 my-sm-0" type="submit">Записать на прием</button>
+                    <button type="button" class="btn btn-outline-dark my-2 my-sm-0" data-toggle="modal" data-target="#myModal">Записать на прием</button>
                             </form>
                         </div>
                     </nav>
@@ -69,12 +69,65 @@
                 <nav aria-label="breadcrumb ">
                     <ol class="breadcrumb bg-white  pl-0">
                         <li class="breadcrumb-item"><a href="index.html" class="text-dark">Главная</a></li>
-                        <li class="breadcrumb-item active" aria-current="page">Расписание</li>
+                        <li class="breadcrumb-item active" aria-current="page">Контакты</li>
                     </ol>
                 </nav>
             </div>
         </div>
     </div>
+    
+    <!-- Modal -->
+    <div id="myModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+        <div class="modal-content">
+
+       
+        <div class="modal-body">
+         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+         	
+<form action="php/post.php" method="post" name="form">
+
+  <!-- Поле ввода имени -->
+
+  <input name="name" type="text" placeholder="Ваше имя"/>
+
+  <br>
+
+  <!-- Поле ввода почты  -->
+
+  <input name="email" type="text" placeholder="Ваша почта"/>
+
+  <br>
+
+  <!-- Поле ввода для темы сообщения -->
+
+  <input size="30" name="header" type="text" placeholder="Тема"/>
+
+  <br>
+
+  <!-- Текстовое поле для самого сообщения -->
+
+  <textarea cols="32" name="message" rows="5"> Текст сообщения
+
+  </textarea>
+
+  <br>
+
+  <!-- Кнопка с надписью «Отправить», которая запускает обработчик формы -->
+
+  <input type="submit" value="Отправить" />
+
+</form>
+
+         
+
+    
+
+        </div><!-- End of Modal body -->
+        </div><!-- End of Modal content -->
+        </div><!-- End of Modal dialog -->
+    </div><!-- End of Modal -->
+    
     <div class="container">
         <div class="row">
             <div class="col-xl-12">
@@ -83,7 +136,24 @@
                <p>Вы можете обратиться к нам по телефону, по электронной почте или договориться о встрече в одной из наших клиник. Будем рады помочь вам и ответить на все ваши вопросы.</p>
                
                <p class="lead">Телефон "горячей линии" для приема жалоб, предложений и замечаний: +7-991-365-44-55</p>
+    
+               
+                                       <H3>Клиника в Ростове</H3>
+                        <hr>
+                        <i class="fas fa-map-marker "></i> г. Ростов-на-Дону, бульвар Комарова 12/1 &#160;&#160;&#160;&#160;&#160;
+                        <i class="fa fa-phone"></i> +7 (863) 256 08-20 <br>
+                        <br>
+                        <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A12e6a7feccad34d848f2fdcefa65687de64bba191ee3f0fea4934b12803b8f86&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;scroll=true"></script>
+                
+                        
+                        <H3>Клиника в Новочеркасске</H3>
+                        <hr>
+                        <i class="fas fa-map-marker"></i> г. Новочеркасск, ул. Просвещения, 77б &#160;&#160;&#160;&#160;&#160;
+                        <i class="fa fa-phone"></i> +7 (999) 693 24-04 <br> <br>
+                        <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A5233ccf4da56b77b395290704f4f2ed8933e845a4f5f32f7c2285d5862e7cf53&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;scroll=true"></script>
  
+           
+           
             </div>
         </div>
     </div>
@@ -186,6 +256,9 @@
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    
+    <script src="assets/js/jqBootstrapValidation.js"></script>
+    <script src="js/recall_me.js"></script>
 </body>
 
 </html>
